@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
       );
     }else{
       // kalo pushReplacement, historynya ke hapus (tidak bisa balik lagi ke halaman Login)
-      Navigator.push(
+      Navigator.pushReplacement(
       context,
       MaterialPageRoute(builder: (context) => HomePage(username: user)),
       );
